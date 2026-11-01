@@ -171,7 +171,7 @@ export default function Home() {
                 Приготовление лакокрасочных материалов
               </h2>
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                Интерактивное веб-приложение для математического моделирования, визуализации и оптимизации процесса смешивания компонентов в смесительных установках[cite: 1, 2].
+                Интерактивное веб-приложение для математического моделирования, визуализации и оптимизации процесса смешивания компонентов в смесительных установках.
               </p>
             </div>
 
@@ -221,12 +221,12 @@ export default function Home() {
             <h2 className="text-lg font-bold text-gray-900">Математическая модель</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                <div className="text-xs font-bold text-gray-500 mb-1">ФОРМУЛА ОДНОРОДНОСТИ[cite: 1, 2]</div>
-                <div className="font-mono text-sm text-gray-800">H(t, n) = 100 · (1 - e<sup>-k · n · t</sup>)[cite: 1, 2]</div>
+                <div className="text-xs font-bold text-gray-500 mb-1">ФОРМУЛА ОДНОРОДНОСТИ</div>
+                <div className="font-mono text-sm text-gray-800">H(t, n) = 100 · (1 - e<sup>-k · n · t</sup>)</div>
               </div>
               <div className="bg-gray-50 p-4 rounded border border-gray-200">
-                <div className="text-xs font-bold text-gray-500 mb-1">ЭНЕРГОЗАТРАТЫ[cite: 1, 2]</div>
-                <div className="font-mono text-sm text-gray-800">E(n, t) = 0.0001 · n² · t[cite: 1, 2]</div>
+                <div className="text-xs font-bold text-gray-500 mb-1">ЭНЕРГОЗАТРАТЫ</div>
+                <div className="font-mono text-sm text-gray-800">E(n, t) = 0.0001 · n² · t</div>
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <label className="text-xs text-gray-600 flex justify-between">
-                  <span>Скорость n (об/мин)[cite: 1, 2]</span>
+                  <span>Скорость n (об/мин)</span>
                   <span className="font-mono">{speed}</span>
                 </label>
                 <input
@@ -278,7 +278,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <label className="text-xs text-gray-600 flex justify-between">
-                  <span>Время t (мин)[cite: 1, 2]</span>
+                  <span>Время t (мин)</span>
                   <span className="font-mono">{time}</span>
                 </label>
                 <input
@@ -322,11 +322,11 @@ export default function Home() {
                   <div className="text-xl font-bold text-blue-600 mt-1">{currentHomogeneity}%</div>
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded shadow-sm">
-                  <div className="text-xs text-gray-500">Энергозатраты (E)[cite: 1, 2]</div>
+                  <div className="text-xs text-gray-500">Энергозатраты (E)</div>
                   <div className="text-xl font-bold text-gray-800 mt-1">{currentEnergy}</div>
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded shadow-sm">
-                  <div className="text-xs text-gray-500">Время до 95%[cite: 1, 2]</div>
+                  <div className="text-xs text-gray-500">Время до 95%</div>
                   <div className="text-xl font-bold text-gray-800 mt-1">{calcTimeToTarget(speed, coeff, 95)} мин</div>
                 </div>
               </div>
@@ -363,7 +363,7 @@ export default function Home() {
         {/* Оптимизация */}
         {activeTab === "opt" && (
           <div className="bg-white border border-gray-200 rounded-lg p-6 space-y-4 shadow-sm">
-            <h2 className="text-lg font-bold text-gray-900">Оптимизация параметров[cite: 1, 2]</h2>
+            <h2 className="text-lg font-bold text-gray-900">Оптимизация параметров</h2>
             <p className="text-sm text-gray-600">
               Поиск минимальных энергозатрат при условии достижения однородности смеси H ≥ 95%[cite: 2, 3].
             </p>
@@ -400,7 +400,7 @@ export default function Home() {
         {/* Графики и результаты */}
         {activeTab === "results" && (
           <div className="bg-white border border-gray-200 rounded-lg p-6 space-y-4 shadow-sm">
-            <h2 className="text-lg font-bold text-gray-900">График зависимости однородности[cite: 1, 2]</h2>
+            <h2 className="text-lg font-bold text-gray-900">График зависимости однородности</h2>
             
             {/* График с интерактивным ховером и тултипом */}
             <div className="h-56 flex items-end gap-1 border-b border-l border-gray-300 p-2 relative pt-8">
@@ -425,7 +425,7 @@ export default function Home() {
               })}
             </div>
             <p className="text-xs text-gray-500 text-center">
-              Изменение однородности H от времени (1 до 20 мин) при скорости n = {speed} об/мин[cite: 1, 2]
+              Изменение однородности H от времени (1 до 20 мин) при скорости n = {speed} об/мин
             </p>
           </div>
         )}
