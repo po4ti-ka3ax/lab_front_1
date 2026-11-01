@@ -179,17 +179,17 @@ export default function Home() {
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col md:flex-row items-center justify-around gap-4 text-center">
               <div className="bg-white p-4 rounded border border-gray-200 w-full md:w-1/3 shadow-sm">
                 <div className="text-xs font-bold text-gray-500">КОМПОНЕНТЫ</div>
-                <div className="text-sm font-semibold text-gray-800 mt-1">Смола (G1) + Растворитель (G2)[cite: 5]</div>
+                <div className="text-sm font-semibold text-gray-800 mt-1">Смола (G1) + Растворитель (G2)</div>
               </div>
               <div className="text-gray-400 font-bold">→</div>
               <div className="bg-white p-4 rounded border border-blue-200 w-full md:w-1/3 shadow-sm">
                 <div className="text-xs font-bold text-blue-500">СМЕСИТЕЛЬНЫЙ УЗЕЛ</div>
-                <div className="text-sm font-semibold text-gray-800 mt-1">Скорость n, Объем V[cite: 2, 5]</div>
+                <div className="text-sm font-semibold text-gray-800 mt-1">Скорость n, Объем V</div>
               </div>
               <div className="text-gray-400 font-bold">→</div>
               <div className="bg-white p-4 rounded border border-green-200 w-full md:w-1/3 shadow-sm">
                 <div className="text-xs font-bold text-green-600">ГОТОВЫЙ ПРОДУКТ</div>
-                <div className="text-sm font-semibold text-gray-800 mt-1">Степень однородности H[cite: 2]</div>
+                <div className="text-sm font-semibold text-gray-800 mt-1">Степень однородности H</div>
               </div>
             </div>
 
@@ -207,10 +207,10 @@ export default function Home() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 space-y-4 shadow-sm text-sm">
             <h2 className="text-lg font-bold text-gray-900">Теоретические сведения</h2>
             <p className="text-gray-600 leading-relaxed">
-              Лакокрасочные материалы (ЛКМ) готовятся путем смешивания смол и растворителей в специальных агрегатах[cite: 5]. Для описания динамики процесса используется закон сохранения материи (приход = убыль + приращение)[cite: 5].
+              Лакокрасочные материалы (ЛКМ) готовятся путем смешивания смол и растворителей в специальных агрегатах. Для описания динамики процесса используется закон сохранения материи (приход = убыль + приращение).
             </p>
             <div className="bg-gray-50 p-4 rounded border border-gray-200 font-mono text-xs text-blue-700">
-              T · (dC / dt) + C = P<sub>i</sub>[cite: 5]
+              T · (dC / dt) + C = P<sub>i</sub>
             </div>
           </div>
         )}
@@ -249,7 +249,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <label className="text-xs text-gray-600 flex justify-between">
-                  <span>Объем (л)[cite: 2]</span>
+                  <span>Объем (л)</span>
                   <span className="font-mono">{volume}</span>
                 </label>
                 <input
@@ -294,7 +294,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <label className="text-xs text-gray-600 flex justify-between">
-                  <span>Коэффициент k[cite: 2]</span>
+                  <span>Коэффициент k</span>
                   <span className="font-mono">{coeff}</span>
                 </label>
                 <input
@@ -318,7 +318,7 @@ export default function Home() {
             <div className="lg:col-span-2 space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="bg-white border border-gray-200 p-4 rounded shadow-sm">
-                  <div className="text-xs text-gray-500">Однородность (H)[cite: 2]</div>
+                  <div className="text-xs text-gray-500">Однородность (H)</div>
                   <div className="text-xl font-bold text-blue-600 mt-1">{currentHomogeneity}%</div>
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded shadow-sm">
@@ -332,7 +332,7 @@ export default function Home() {
               </div>
 
               <div className="bg-white border border-gray-200 rounded p-4 shadow-sm overflow-x-auto">
-                <h4 className="text-xs font-bold text-gray-700 uppercase mb-3">История экспериментов[cite: 2, 4]</h4>
+                <h4 className="text-xs font-bold text-gray-700 uppercase mb-3">История экспериментов</h4>
                 <table className="w-full text-left text-xs text-gray-600">
                   <thead className="bg-gray-50 text-gray-500 border-b border-gray-200">
                     <tr>
@@ -365,7 +365,7 @@ export default function Home() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 space-y-4 shadow-sm">
             <h2 className="text-lg font-bold text-gray-900">Оптимизация параметров</h2>
             <p className="text-sm text-gray-600">
-              Поиск минимальных энергозатрат при условии достижения однородности смеси H ≥ 95%[cite: 2, 3].
+              Поиск минимальных энергозатрат при условии достижения однородности смеси H ≥ 95%.
             </p>
             <button
               onClick={handleOptimize}
